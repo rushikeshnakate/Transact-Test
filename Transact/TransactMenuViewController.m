@@ -11,7 +11,7 @@
 #import "TransactAgentHomeViewController.h"
 #import "TransactUIViewControllerViewController.h"
 #import "TransactNavigationViewController.h"
-//#import "TransactAgentHomeViewController.h"
+#import "TransactLoginViewController.h"
 
 @interface TransactMenuViewController ()
 
@@ -67,6 +67,43 @@
             TransactAgentHomeViewController *thirdViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"agentHomeController"];
             navigationController.viewControllers = @[thirdViewController];
         }
+        else if(indexPath.section == 0 && indexPath.row == 3)
+        {
+            NSUserDefaults *userProperties = [NSUserDefaults standardUserDefaults];
+            if([userProperties integerForKey:@"UserCompanyId"] != 0 && [userProperties objectForKey:@"UserCompanyId"] != nil)
+            {
+                //
+            }
+            
+            if(![[userProperties stringForKey: @"UserEmail"] isEqualToString:@""] && [userProperties objectForKey:@"UserEmail"] != nil)
+            {
+                //
+            }
+            
+            if(![[userProperties stringForKey:@"UserFName"] isEqualToString:@""] && [userProperties objectForKey:@"UserFName"] != nil)
+            {
+                //
+            }
+            
+            if(![[userProperties stringForKey:@"UserLName"] isEqualToString:@""] && [userProperties objectForKey:@"UserLName"] != nil)
+            {
+                //
+            }
+            
+            if(![[userProperties stringForKey:@"UserId"] isEqualToString:@""] && [userProperties objectForKey:@"UserId"] != nil)
+            {
+                //
+            }
+            
+            if([userProperties integerForKey:@"UserRole"] != 0 && [userProperties objectForKey:@"UserRole"] != nil)
+            {
+                //
+            }
+
+            TransactLoginViewController *thirdViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"loginController"];
+            navigationController.viewControllers = @[thirdViewController];
+        }
+        
     //    else {
     //        DEMOSecondViewController *secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondController"];
     //        navigationController.viewControllers = @[secondViewController];
@@ -91,7 +128,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return 5;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -104,8 +141,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    NSArray *titles = @[@"Home", @"Search Transactions", @"My Account", @"Feedback", @"Logout"];
-    NSArray *icons = @[@"Home_Icon.png", @"SearchTrans_icon.png", @"MyAccount_Icon.png", @"Feedback_Icon.png", @"Logout_Icon.png"];
+    NSArray *titles = @[@"Home", @"Search Transactions", @"My Account", @"Logout"];
+    NSArray *icons = @[@"Home_Icon.png", @"SearchTrans_icon.png", @"MyAccount_Icon.png", @"Logout_Icon.png"];
     
     UILabel *menuName = [[UILabel alloc] initWithFrame:CGRectMake(0,105,100,20)];
     menuName.text = titles[indexPath.row];

@@ -12,6 +12,8 @@
 
 @interface TransactLoginViewController : UIViewController
 
+@property (assign, readwrite, nonatomic) NSUserDefaults* UserProperties;
+
 @property (weak, nonatomic) IBOutlet UITextField *txtUserName;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 @property (weak, nonatomic) IBOutlet UIView *loginView;

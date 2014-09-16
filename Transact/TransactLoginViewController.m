@@ -97,18 +97,19 @@
          if([userDetails objectForKey:@"UserCompanyId"] != nil && [[userDetails objectForKey:@"UserCompanyId"] integerValue] != 0)
          {
              
-         NSUserDefaults *UserProperties = [NSUserDefaults standardUserDefaults];
-         [UserProperties setObject:[userDetails objectForKey:@"UserCompanyId"] forKey:@"UserCompanyId"];
-         [UserProperties setObject:[userDetails objectForKey:@"UserEmail"] forKey:@"UserEmail"];
-         [UserProperties setObject:[userDetails objectForKey:@"UserFName"] forKey:@"UserFName"];
-         [UserProperties setObject:[userDetails objectForKey:@"UserLName"] forKey:@"UserLName"];
-         [UserProperties setObject:[userDetails objectForKey:@"UserId"] forKey:@"UserId"];
-         [UserProperties setObject:[userDetails objectForKey:@"UserRole"] forKey:@"UserRole"];
-         
+         //NSUserDefaults *UserProperties = [NSUserDefaults standardUserDefaults];
+          self.UserProperties = [NSUserDefaults standardUserDefaults];
+         [self.UserProperties setObject:[userDetails objectForKey:@"UserCompanyId"] forKey:@"UserCompanyId"];
+         [self.UserProperties setObject:[userDetails objectForKey:@"UserEmail"] forKey:@"UserEmail"];
+         [self.UserProperties setObject:[userDetails objectForKey:@"UserFName"] forKey:@"UserFName"];
+         [self.UserProperties setObject:[userDetails objectForKey:@"UserLName"] forKey:@"UserLName"];
+         [self.UserProperties setObject:[userDetails objectForKey:@"UserId"] forKey:@"UserId"];
+         [self.UserProperties setObject:[userDetails objectForKey:@"UserRole"] forKey:@"UserRole"];
+             [self.UserProperties synchronize];
         
              TransactNavigationViewController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
              NSLog(@"isLoggedin");
-             int userRole = [UserProperties integerForKey:@"UserRole"];
+             int userRole = [self.UserProperties integerForKey:@"UserRole"];
              if(userRole == 2)
              {
                  TransactBrokerHomeViewController *HomePage = [self.storyboard instantiateViewControllerWithIdentifier:@"brokerHomeController"];
