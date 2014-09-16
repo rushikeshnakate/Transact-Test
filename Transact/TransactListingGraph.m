@@ -148,9 +148,9 @@
             float barY = (kBarTop + maxBarHeight - maxBarHeight *barXValue);
             float barHeight = maxBarHeight * [[data2 objectAtIndex:j] floatValue];
             
-            [startXArray addObject:[NSNumber numberWithFloat:(barX + 34)]];
+            [startXArray addObject:[NSNumber numberWithFloat:(barX + 44)]];
             [barHeightArray addObject:[NSNumber numberWithFloat:barHeight]];
-            [startYArray addObject:[NSNumber numberWithFloat:(barY + 36)]]; //replace "36" by "86" if navigation bar is present on top of view
+            [startYArray addObject:[NSNumber numberWithFloat:(barY + 45)]]; //replace "36" by "86" if navigation bar is present on top of view
             
             NSLog(@"%@",startYArray[i]);
             

@@ -48,7 +48,7 @@
     [self.TransactListingGraph addGestureRecognizer:singleFingerTap];
     
     
-    url = @"http://192.168.2.104/api/GraphReport/GetListingGraph/?companyid=";
+    url = @"http://192.168.1.104/api/GraphReport/GetListingGraph/?companyid=";
     NSString *CompanyID = @"64";
     url = [url stringByAppendingString:CompanyID];
     url = [url stringByAppendingString:@"&roleid=2"];
@@ -148,7 +148,7 @@
         float barY = [barYObj floatValue];
         switch (i) {
             case 0:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -168,7 +168,7 @@
                 
                 
             case 1:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -186,7 +186,7 @@
                 
                 
             case 2:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -205,7 +205,7 @@
                 
                 
             case 3:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -224,7 +224,7 @@
                 
                 
             case 4:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -242,7 +242,7 @@
                 break;
                 
             case 5:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -259,7 +259,7 @@
                 }
                 break;
             case 6:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -279,7 +279,7 @@
                 
                 break;
             case 7:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -296,7 +296,7 @@
                 }
                 break;
             case 8:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -313,7 +313,7 @@
                 }
                 break;
             case 9:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -329,7 +329,7 @@
                 }
                 break;
             case 10:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= barY && (touchedY) <= (barY + barHeight))
                     {
@@ -346,7 +346,7 @@
                 }
                 break;
             case 11:
-                if(touchedX >= barStartX && touchedX <= (barStartX + kBarWidth))
+                if((touchedX) >= barStartX && touchedX <= (barStartX + kBarWidth))
                 {
                     if(touchedY >= (barY) && (touchedY) <= (barY + barHeight))
                     {

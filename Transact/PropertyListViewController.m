@@ -99,7 +99,7 @@
     cell.PropertyAddressCell.textColor = [UIColor brownColor];
     cell.PropertyTypeCell.text = PropertyType[indexPath.row];
     cell.PropertyTypeCell.textColor = [UIColor redColor];
-    [[cell PropertyImageCell]setImage :[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[PropertyImage objectAtIndex:indexPath.item]]]]];
+   // [[cell PropertyImageCell]setImage :[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[PropertyImage objectAtIndex:indexPath.item]]]]];
     
     
     return cell;
