@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0900241C19B9E616008EA05B /* TransactListingGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 0900241B19B9E616008EA05B /* TransactListingGraph.m */; };
+		0902797719C425AF006327D9 /* TransactMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0902797619C425AF006327D9 /* TransactMenuViewController.m */; };
+		0902797A19C4333A006327D9 /* TransactRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0902797919C4333A006327D9 /* TransactRootViewController.m */; };
+		0902797D19C48877006327D9 /* TransactAgentHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0902797C19C48877006327D9 /* TransactAgentHomeViewController.m */; };
+		0902798119C48B40006327D9 /* TransactSearchPropertyCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0902798019C48B40006327D9 /* TransactSearchPropertyCVCell.m */; };
+		0903889519B59E4F003EFD3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903889419B59E4F003EFD3B /* Foundation.framework */; };
+		0903889719B59E4F003EFD3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903889619B59E4F003EFD3B /* CoreGraphics.framework */; };
+		0903889919B59E4F003EFD3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903889819B59E4F003EFD3B /* UIKit.framework */; };
+		0903889F19B59E50003EFD3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0903889D19B59E50003EFD3B /* InfoPlist.strings */; };
+		090388A119B59E50003EFD3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 090388A019B59E50003EFD3B /* main.m */; };
+		090388A519B59E50003EFD3B /* TransactAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 090388A419B59E50003EFD3B /* TransactAppDelegate.m */; };
+		090388A719B59E50003EFD3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090388A619B59E50003EFD3B /* Images.xcassets */; };
+		090388AE19B59E50003EFD3B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090388AD19B59E50003EFD3B /* XCTest.framework */; };
+		090388AF19B59E50003EFD3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903889419B59E4F003EFD3B /* Foundation.framework */; };
+		090388B019B59E50003EFD3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903889819B59E4F003EFD3B /* UIKit.framework */; };
+		090388B819B59E50003EFD3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 090388B619B59E50003EFD3B /* InfoPlist.strings */; };
+		090388BA19B59E50003EFD3B /* TransactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090388B919B59E50003EFD3B /* TransactTests.m */; };
+		090388C419B59E82003EFD3B /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090388C319B59E82003EFD3B /* Initial.storyboard */; };
+		090388C819B59ED1003EFD3B /* TransactLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090388C719B59ED1003EFD3B /* TransactLoginViewController.m */; };
+		090388CB19B59F1B003EFD3B /* TransactBrokerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090388CA19B59F1B003EFD3B /* TransactBrokerHomeViewController.m */; };
+		0918277719C841BF00F4D4A8 /* PropertyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0918277419C841BF00F4D4A8 /* PropertyListViewController.m */; };
+		0918277819C841BF00F4D4A8 /* PropertyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0918277619C841BF00F4D4A8 /* PropertyViewCell.m */; };
+		094CDB8619C31C6B0020834C /* TransactCommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CDB8519C31C6B0020834C /* TransactCommonFunctions.m */; };
+		094CDB8919C3262B0020834C /* TransactContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CDB8819C3262B0020834C /* TransactContainerViewController.m */; };
+		094CDB8C19C3268F0020834C /* TransactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CDB8B19C3268F0020834C /* TransactViewController.m */; };
+		094CDB8F19C326B80020834C /* TransactUIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CDB8E19C326B80020834C /* TransactUIImageViewController.m */; };
+		094CDB9219C326E10020834C /* TransactUIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CDB9119C326E10020834C /* TransactUIViewViewController.m */; };
+		094CDB9519C327020020834C /* TransactUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CDB9419C327020020834C /* TransactUIViewControllerViewController.m */; };
+		094CDB9E19C33AF70020834C /* TransactNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CDB9D19C33AF70020834C /* TransactNavigationViewController.m */; };
+		09F7B2B419C05CE800A3D3D2 /* Feedback_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2B319C05CE800A3D3D2 /* Feedback_Icon.png */; };
+		09F7B2B619C05CF700A3D3D2 /* Home_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2B519C05CF700A3D3D2 /* Home_Icon.png */; };
+		09F7B2B919C05D0800A3D3D2 /* Inner_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2B719C05D0800A3D3D2 /* Inner_Logo.png */; };
+		09F7B2BA19C05D0800A3D3D2 /* Login_Logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2B819C05D0800A3D3D2 /* Login_Logo.PNG */; };
+		09F7B2BC19C05D2F00A3D3D2 /* Logout_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2BB19C05D2F00A3D3D2 /* Logout_Icon.png */; };
+		09F7B2BF19C05D3800A3D3D2 /* MenuLink_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2BD19C05D3800A3D3D2 /* MenuLink_Icon.png */; };
+		09F7B2C019C05D3800A3D3D2 /* MyAccount_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2BE19C05D3800A3D3D2 /* MyAccount_Icon.png */; };
+		09F7B2C319C05D5200A3D3D2 /* SearchTrans_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2C119C05D5200A3D3D2 /* SearchTrans_icon.png */; };
+		09F7B2C419C05D5200A3D3D2 /* Username_Img.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2C219C05D5200A3D3D2 /* Username_Img.PNG */; };
+		09F7B2C619C05D5A00A3D3D2 /* password_Img.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 09F7B2C519C05D5A00A3D3D2 /* password_Img.PNG */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		090388B119B59E50003EFD3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0903888919B59E4F003EFD3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0903889019B59E4F003EFD3B;
+			remoteInfo = Transact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0900241A19B9E616008EA05B /* TransactListingGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactListingGraph.h; sourceTree = "<group>"; };
+		0900241B19B9E616008EA05B /* TransactListingGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactListingGraph.m; sourceTree = "<group>"; };
+		0902797519C425AF006327D9 /* TransactMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactMenuViewController.h; sourceTree = "<group>"; };
+		0902797619C425AF006327D9 /* TransactMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactMenuViewController.m; sourceTree = "<group>"; };
+		0902797819C4333A006327D9 /* TransactRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactRootViewController.h; sourceTree = "<group>"; };
+		0902797919C4333A006327D9 /* TransactRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactRootViewController.m; sourceTree = "<group>"; };
+		0902797B19C48877006327D9 /* TransactAgentHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactAgentHomeViewController.h; sourceTree = "<group>"; };
+		0902797C19C48877006327D9 /* TransactAgentHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactAgentHomeViewController.m; sourceTree = "<group>"; };
+		0902797F19C48B40006327D9 /* TransactSearchPropertyCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactSearchPropertyCVCell.h; sourceTree = "<group>"; };
+		0902798019C48B40006327D9 /* TransactSearchPropertyCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactSearchPropertyCVCell.m; sourceTree = "<group>"; };
+		0903889119B59E4F003EFD3B /* Transact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0903889419B59E4F003EFD3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0903889619B59E4F003EFD3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0903889819B59E4F003EFD3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0903889C19B59E50003EFD3B /* Transact-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Transact-Info.plist"; sourceTree = "<group>"; };
+		0903889E19B59E50003EFD3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		090388A019B59E50003EFD3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		090388A219B59E50003EFD3B /* Transact-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Transact-Prefix.pch"; sourceTree = "<group>"; };
+		090388A319B59E50003EFD3B /* TransactAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactAppDelegate.h; sourceTree = "<group>"; };
+		090388A419B59E50003EFD3B /* TransactAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactAppDelegate.m; sourceTree = "<group>"; };
+		090388A619B59E50003EFD3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		090388AC19B59E50003EFD3B /* TransactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		090388AD19B59E50003EFD3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		090388B519B59E50003EFD3B /* TransactTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransactTests-Info.plist"; sourceTree = "<group>"; };
+		090388B719B59E50003EFD3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		090388B919B59E50003EFD3B /* TransactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactTests.m; sourceTree = "<group>"; };
+		090388C319B59E82003EFD3B /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
+		090388C619B59ED1003EFD3B /* TransactLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactLoginViewController.h; sourceTree = "<group>"; };
+		090388C719B59ED1003EFD3B /* TransactLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactLoginViewController.m; sourceTree = "<group>"; };
+		090388C919B59F1B003EFD3B /* TransactBrokerHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactBrokerHomeViewController.h; sourceTree = "<group>"; };
+		090388CA19B59F1B003EFD3B /* TransactBrokerHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactBrokerHomeViewController.m; sourceTree = "<group>"; };
+		0918277319C841BF00F4D4A8 /* PropertyListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyListViewController.h; sourceTree = "<group>"; };
+		0918277419C841BF00F4D4A8 /* PropertyListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyListViewController.m; sourceTree = "<group>"; };
+		0918277519C841BF00F4D4A8 /* PropertyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyViewCell.h; sourceTree = "<group>"; };
+		0918277619C841BF00F4D4A8 /* PropertyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyViewCell.m; sourceTree = "<group>"; };
+		094CDB8419C31C6B0020834C /* TransactCommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactCommonFunctions.h; sourceTree = "<group>"; };
+		094CDB8519C31C6B0020834C /* TransactCommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactCommonFunctions.m; sourceTree = "<group>"; };
+		094CDB8719C3262B0020834C /* TransactContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactContainerViewController.h; sourceTree = "<group>"; };
+		094CDB8819C3262B0020834C /* TransactContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactContainerViewController.m; sourceTree = "<group>"; };
+		094CDB8A19C3268F0020834C /* TransactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactViewController.h; sourceTree = "<group>"; };
+		094CDB8B19C3268F0020834C /* TransactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactViewController.m; sourceTree = "<group>"; };
+		094CDB8D19C326B80020834C /* TransactUIImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactUIImageViewController.h; sourceTree = "<group>"; };
+		094CDB8E19C326B80020834C /* TransactUIImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactUIImageViewController.m; sourceTree = "<group>"; };
+		094CDB9019C326E10020834C /* TransactUIViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactUIViewViewController.h; sourceTree = "<group>"; };
+		094CDB9119C326E10020834C /* TransactUIViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactUIViewViewController.m; sourceTree = "<group>"; };
+		094CDB9319C327020020834C /* TransactUIViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactUIViewControllerViewController.h; sourceTree = "<group>"; };
+		094CDB9419C327020020834C /* TransactUIViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactUIViewControllerViewController.m; sourceTree = "<group>"; };
+		094CDB9C19C33AF70020834C /* TransactNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactNavigationViewController.h; sourceTree = "<group>"; };
+		094CDB9D19C33AF70020834C /* TransactNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactNavigationViewController.m; sourceTree = "<group>"; };
+		09F7B2B319C05CE800A3D3D2 /* Feedback_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feedback_Icon.png; sourceTree = "<group>"; };
+		09F7B2B519C05CF700A3D3D2 /* Home_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_Icon.png; sourceTree = "<group>"; };
+		09F7B2B719C05D0800A3D3D2 /* Inner_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inner_Logo.png; sourceTree = "<group>"; };
+		09F7B2B819C05D0800A3D3D2 /* Login_Logo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_Logo.PNG; sourceTree = "<group>"; };
+		09F7B2BB19C05D2F00A3D3D2 /* Logout_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logout_Icon.png; sourceTree = "<group>"; };
+		09F7B2BD19C05D3800A3D3D2 /* MenuLink_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuLink_Icon.png; sourceTree = "<group>"; };
+		09F7B2BE19C05D3800A3D3D2 /* MyAccount_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyAccount_Icon.png; sourceTree = "<group>"; };
+		09F7B2C119C05D5200A3D3D2 /* SearchTrans_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchTrans_icon.png; sourceTree = "<group>"; };
+		09F7B2C219C05D5200A3D3D2 /* Username_Img.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Username_Img.PNG; sourceTree = "<group>"; };
+		09F7B2C519C05D5A00A3D3D2 /* password_Img.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password_Img.PNG; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0903888E19B59E4F003EFD3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0903889719B59E4F003EFD3B /* CoreGraphics.framework in Frameworks */,
+				0903889919B59E4F003EFD3B /* UIKit.framework in Frameworks */,
+				0903889519B59E4F003EFD3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090388A919B59E50003EFD3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090388AE19B59E50003EFD3B /* XCTest.framework in Frameworks */,
+				090388B019B59E50003EFD3B /* UIKit.framework in Frameworks */,
+				090388AF19B59E50003EFD3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0902797E19C48AEB006327D9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0902797F19C48B40006327D9 /* TransactSearchPropertyCVCell.h */,
+				0902798019C48B40006327D9 /* TransactSearchPropertyCVCell.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0903888819B59E4F003EFD3B = {
+			isa = PBXGroup;
+			children = (
+				0903889A19B59E50003EFD3B /* Transact */,
+				090388B319B59E50003EFD3B /* TransactTests */,
+				0903889319B59E4F003EFD3B /* Frameworks */,
+				0903889219B59E4F003EFD3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0903889219B59E4F003EFD3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0903889119B59E4F003EFD3B /* Transact.app */,
+				090388AC19B59E50003EFD3B /* TransactTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0903889319B59E4F003EFD3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0903889419B59E4F003EFD3B /* Foundation.framework */,
+				0903889619B59E4F003EFD3B /* CoreGraphics.framework */,
+				0903889819B59E4F003EFD3B /* UIKit.framework */,
+				090388AD19B59E50003EFD3B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0903889A19B59E50003EFD3B /* Transact */ = {
+			isa = PBXGroup;
+			children = (
+				0918277319C841BF00F4D4A8 /* PropertyListViewController.h */,
+				0918277419C841BF00F4D4A8 /* PropertyListViewController.m */,
+				0918277519C841BF00F4D4A8 /* PropertyViewCell.h */,
+				0918277619C841BF00F4D4A8 /* PropertyViewCell.m */,
+				0902797E19C48AEB006327D9 /* Library */,
+				094CDB8319C31B460020834C /* Menu */,
+				09F7B2B219C05CC700A3D3D2 /* Images */,
+				090388C519B59EA1003EFD3B /* Login */,
+				090388A319B59E50003EFD3B /* TransactAppDelegate.h */,
+				090388A419B59E50003EFD3B /* TransactAppDelegate.m */,
+				090388C319B59E82003EFD3B /* Initial.storyboard */,
+				0900241A19B9E616008EA05B /* TransactListingGraph.h */,
+				0900241B19B9E616008EA05B /* TransactListingGraph.m */,
+				090388A619B59E50003EFD3B /* Images.xcassets */,
+				0903889B19B59E50003EFD3B /* Supporting Files */,
+				090388C919B59F1B003EFD3B /* TransactBrokerHomeViewController.h */,
+				090388CA19B59F1B003EFD3B /* TransactBrokerHomeViewController.m */,
+				094CDB9C19C33AF70020834C /* TransactNavigationViewController.h */,
+				094CDB9D19C33AF70020834C /* TransactNavigationViewController.m */,
+				0902797519C425AF006327D9 /* TransactMenuViewController.h */,
+				0902797619C425AF006327D9 /* TransactMenuViewController.m */,
+				0902797819C4333A006327D9 /* TransactRootViewController.h */,
+				0902797919C4333A006327D9 /* TransactRootViewController.m */,
+				0902797B19C48877006327D9 /* TransactAgentHomeViewController.h */,
+				0902797C19C48877006327D9 /* TransactAgentHomeViewController.m */,
+			);
+			path = Transact;
+			sourceTree = "<group>";
+		};
+		0903889B19B59E50003EFD3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0903889C19B59E50003EFD3B /* Transact-Info.plist */,
+				0903889D19B59E50003EFD3B /* InfoPlist.strings */,
+				090388A019B59E50003EFD3B /* main.m */,
+				090388A219B59E50003EFD3B /* Transact-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		090388B319B59E50003EFD3B /* TransactTests */ = {
+			isa = PBXGroup;
+			children = (
+				090388B919B59E50003EFD3B /* TransactTests.m */,
+				090388B419B59E50003EFD3B /* Supporting Files */,
+			);
+			path = TransactTests;
+			sourceTree = "<group>";
+		};
+		090388B419B59E50003EFD3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				090388B519B59E50003EFD3B /* TransactTests-Info.plist */,
+				090388B619B59E50003EFD3B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		090388C519B59EA1003EFD3B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				090388C619B59ED1003EFD3B /* TransactLoginViewController.h */,
+				090388C719B59ED1003EFD3B /* TransactLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		094CDB8319C31B460020834C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				094CDB8419C31C6B0020834C /* TransactCommonFunctions.h */,
+				094CDB8519C31C6B0020834C /* TransactCommonFunctions.m */,
+				094CDB8719C3262B0020834C /* TransactContainerViewController.h */,
+				094CDB8819C3262B0020834C /* TransactContainerViewController.m */,
+				094CDB8A19C3268F0020834C /* TransactViewController.h */,
+				094CDB8B19C3268F0020834C /* TransactViewController.m */,
+				094CDB8D19C326B80020834C /* TransactUIImageViewController.h */,
+				094CDB8E19C326B80020834C /* TransactUIImageViewController.m */,
+				094CDB9019C326E10020834C /* TransactUIViewViewController.h */,
+				094CDB9119C326E10020834C /* TransactUIViewViewController.m */,
+				094CDB9319C327020020834C /* TransactUIViewControllerViewController.h */,
+				094CDB9419C327020020834C /* TransactUIViewControllerViewController.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		09F7B2B219C05CC700A3D3D2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				09F7B2C519C05D5A00A3D3D2 /* password_Img.PNG */,
+				09F7B2C119C05D5200A3D3D2 /* SearchTrans_icon.png */,
+				09F7B2C219C05D5200A3D3D2 /* Username_Img.PNG */,
+				09F7B2B719C05D0800A3D3D2 /* Inner_Logo.png */,
+				09F7B2B819C05D0800A3D3D2 /* Login_Logo.PNG */,
+				09F7B2B519C05CF700A3D3D2 /* Home_Icon.png */,
+				09F7B2BD19C05D3800A3D3D2 /* MenuLink_Icon.png */,
+				09F7B2BE19C05D3800A3D3D2 /* MyAccount_Icon.png */,
+				09F7B2BB19C05D2F00A3D3D2 /* Logout_Icon.png */,
+				09F7B2B319C05CE800A3D3D2 /* Feedback_Icon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0903889019B59E4F003EFD3B /* Transact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090388BD19B59E50003EFD3B /* Build configuration list for PBXNativeTarget "Transact" */;
+			buildPhases = (
+				0903888D19B59E4F003EFD3B /* Sources */,
+				0903888E19B59E4F003EFD3B /* Frameworks */,
+				0903888F19B59E4F003EFD3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transact;
+			productName = Transact;
+			productReference = 0903889119B59E4F003EFD3B /* Transact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		090388AB19B59E50003EFD3B /* TransactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090388C019B59E50003EFD3B /* Build configuration list for PBXNativeTarget "TransactTests" */;
+			buildPhases = (
+				090388A819B59E50003EFD3B /* Sources */,
+				090388A919B59E50003EFD3B /* Frameworks */,
+				090388AA19B59E50003EFD3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090388B219B59E50003EFD3B /* PBXTargetDependency */,
+			);
+			name = TransactTests;
+			productName = TransactTests;
+			productReference = 090388AC19B59E50003EFD3B /* TransactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0903888919B59E4F003EFD3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Transact;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = TrSoft;
+				TargetAttributes = {
+					090388AB19B59E50003EFD3B = {
+						TestTargetID = 0903889019B59E4F003EFD3B;
+					};
+				};
+			};
+			buildConfigurationList = 0903888C19B59E4F003EFD3B /* Build configuration list for PBXProject "Transact" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0903888819B59E4F003EFD3B;
+			productRefGroup = 0903889219B59E4F003EFD3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0903889019B59E4F003EFD3B /* Transact */,
+				090388AB19B59E50003EFD3B /* TransactTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0903888F19B59E4F003EFD3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090388C419B59E82003EFD3B /* Initial.storyboard in Resources */,
+				09F7B2BA19C05D0800A3D3D2 /* Login_Logo.PNG in Resources */,
+				09F7B2B419C05CE800A3D3D2 /* Feedback_Icon.png in Resources */,
+				0903889F19B59E50003EFD3B /* InfoPlist.strings in Resources */,
+				09F7B2BC19C05D2F00A3D3D2 /* Logout_Icon.png in Resources */,
+				09F7B2C619C05D5A00A3D3D2 /* password_Img.PNG in Resources */,
+				09F7B2BF19C05D3800A3D3D2 /* MenuLink_Icon.png in Resources */,
+				09F7B2B619C05CF700A3D3D2 /* Home_Icon.png in Resources */,
+				090388A719B59E50003EFD3B /* Images.xcassets in Resources */,
+				09F7B2C019C05D3800A3D3D2 /* MyAccount_Icon.png in Resources */,
+				09F7B2B919C05D0800A3D3D2 /* Inner_Logo.png in Resources */,
+				09F7B2C319C05D5200A3D3D2 /* SearchTrans_icon.png in Resources */,
+				09F7B2C419C05D5200A3D3D2 /* Username_Img.PNG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090388AA19B59E50003EFD3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090388B819B59E50003EFD3B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0903888D19B59E4F003EFD3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094CDB9E19C33AF70020834C /* TransactNavigationViewController.m in Sources */,
+				0902797719C425AF006327D9 /* TransactMenuViewController.m in Sources */,
+				094CDB8619C31C6B0020834C /* TransactCommonFunctions.m in Sources */,
+				090388A519B59E50003EFD3B /* TransactAppDelegate.m in Sources */,
+				094CDB9519C327020020834C /* TransactUIViewControllerViewController.m in Sources */,
+				094CDB8C19C3268F0020834C /* TransactViewController.m in Sources */,
+				094CDB8F19C326B80020834C /* TransactUIImageViewController.m in Sources */,
+				0918277819C841BF00F4D4A8 /* PropertyViewCell.m in Sources */,
+				090388C819B59ED1003EFD3B /* TransactLoginViewController.m in Sources */,
+				0902797D19C48877006327D9 /* TransactAgentHomeViewController.m in Sources */,
+				0902797A19C4333A006327D9 /* TransactRootViewController.m in Sources */,
+				0900241C19B9E616008EA05B /* TransactListingGraph.m in Sources */,
+				094CDB8919C3262B0020834C /* TransactContainerViewController.m in Sources */,
+				090388CB19B59F1B003EFD3B /* TransactBrokerHomeViewController.m in Sources */,
+				0918277719C841BF00F4D4A8 /* PropertyListViewController.m in Sources */,
+				0902798119C48B40006327D9 /* TransactSearchPropertyCVCell.m in Sources */,
+				090388A119B59E50003EFD3B /* main.m in Sources */,
+				094CDB9219C326E10020834C /* TransactUIViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090388A819B59E50003EFD3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090388BA19B59E50003EFD3B /* TransactTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		090388B219B59E50003EFD3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0903889019B59E4F003EFD3B /* Transact */;
+			targetProxy = 090388B119B59E50003EFD3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0903889D19B59E50003EFD3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0903889E19B59E50003EFD3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		090388B619B59E50003EFD3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090388B719B59E50003EFD3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		090388BB19B59E50003EFD3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		090388BC19B59E50003EFD3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		090388BE19B59E50003EFD3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transact/Transact-Prefix.pch";
+				INFOPLIST_FILE = "Transact/Transact-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		090388BF19B59E50003EFD3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transact/Transact-Prefix.pch";
+				INFOPLIST_FILE = "Transact/Transact-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		090388C119B59E50003EFD3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Transact.app/Transact";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transact/Transact-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TransactTests/TransactTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		090388C219B59E50003EFD3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Transact.app/Transact";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transact/Transact-Prefix.pch";
+				INFOPLIST_FILE = "TransactTests/TransactTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0903888C19B59E4F003EFD3B /* Build configuration list for PBXProject "Transact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090388BB19B59E50003EFD3B /* Debug */,
+				090388BC19B59E50003EFD3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090388BD19B59E50003EFD3B /* Build configuration list for PBXNativeTarget "Transact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090388BE19B59E50003EFD3B /* Debug */,
+				090388BF19B59E50003EFD3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090388C019B59E50003EFD3B /* Build configuration list for PBXNativeTarget "TransactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090388C119B59E50003EFD3B /* Debug */,
+				090388C219B59E50003EFD3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0903888919B59E4F003EFD3B /* Project object */;
+}
